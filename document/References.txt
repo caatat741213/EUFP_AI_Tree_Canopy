@@ -1,0 +1,35 @@
+
+Ali, D., Ahmed, M., Wang, H., Khan, A., Jordan, N. P. A., Kim, S. S. Y., Muchhala, M. D., Merkle, A. K., & Papakyriakopoulos, O. (2025). *AI adoption across mission-driven organizations* (arXiv:2510.03868v1). arXiv.
+
+Alonzo, M., Van Den Hoek, J., & Ahmed, A. (2021). Capturing the non-linear dynamics of urban tree stress: Integrating microclimate imagery and machine learning pipelines. *Remote Sensing of Environment*, 254, 112–128.
+
+Big Leaf Tree. (n.d.). *Tree removal and trimming price guide*. [https://bigleaftree.ca/price-guide/](https://bigleaftree.ca/price-guide/)
+
+CIBC. (n.d.). *CIBC’s trustworthy AI commitment*.
+
+Financial Services Sector Coordinating Council. (2026, January). *AI and explainability in finance: Explainability challenges, practices and recommendations*.
+
+Hussain, A., & Rizwan, R. (2024). *Strategic AI adoption in SMEs: A prescriptive framework* (arXiv:2408.11825v1). arXiv. [https://doi.org/10.48550/arXiv.2408.11825](https://www.google.com/search?q=https://doi.org/10.48550/arXiv.2408.11825)
+
+Jim, C. Y. (2017). Managing urban trees to mitigate the urban heat island effect: Macroclimate policies and microclimate engineering parameters. *Sustainable Cities and Society*, 35, 224–239.
+
+Kadam, P. (n.d.). *Enhancing financial fraud detection with human-in-the-loop feedback and feedback propagation*. arXiv.
+
+Lamria, G. (n.d.). *AI-driven fraud detection in the financial sector: Architecture, impact, and challenges*. Columbia Academic Commons.
+
+Millward, A. A., & Sabir, S. (2011). Structure of a municipal forest and its capability to provide sub-canopy microclimatic cooling benefits. *Urban Forestry & Urban Greening*, 10(4), 273–282.
+
+Nesbitt, L., Meitner, M. J., Girling, C., Sheppard, S. R., & Lu, Y. (2019). Who has access to urban vegetation? A spatial analysis of distributional green equity in US cities. *Landscape and Urban Planning*, 181, 51–79.
+
+Roman, L. A., McPherson, E. G., Scharenbroch, B. C., & Dahl, J. (2014). Criteria for evaluating urban tree risk models: Balancing deterministic metrics and stochastic weather noise. *Arboriculture & Urban Forestry*, 40(5), 301–316.
+
+Selvam, M. (2025). Ethical AI for personalized banking: Addressing bias and fairness challenges. *LatIA*, 3(361). [https://doi.org/10.62486/latia2025361](https://www.google.com/search?q=https://doi.org/10.62486/latia2025361)
+
+TD Bank. (2026, March). *2026 AI insights report: Artificial intelligence at the consumer inflection point*. TD Stories. [https://stories.td.com/us/en/article/2026-aiinsights-report-artificial-intelligence-at-the-consumer-inflection-point](https://www.google.com/search?q=https://stories.td.com/us/en/article/2026-aiinsights-report-artificial-intelligence-at-the-consumer-inflection-point)
+
+Vogt, J. M., Hauer, R. J., & Fischer, B. C. (2015). Explaining the urban forest: A need for proactive asset management. *Arboriculture & Urban Forestry*, 41(1), 25–43.
+
+Weinberg, A. I. (2025, October 24). *A framework for the adoption and integration of generative AI in midsize organizations and enterprises (FAIGMOE)* (arXiv:2510.19997v1). arXiv. [https://doi.org/10.48550/arXiv.2510.19997](https://www.google.com/search?q=https://doi.org/10.48550/arXiv.2510.19997)
+
+Ziter, C. D., Pedersen, E. J., Kucharik, C. J., & Turner, M. G. (2019). Scale-dependent interactions between tree canopy cover and impervious surfaces reduce urban air temperature. *Proceedings of the National Academy of Sciences*, 116(15), 7575–7580.
+

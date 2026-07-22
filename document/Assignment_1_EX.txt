@@ -1,0 +1,127 @@
+## Enhancing Urban Forestry Planning with an AI-Powered Tree Canopy Decision Support System
+
+### Abstract
+This study develops an AI-assisted decision support framework for urban forestry planning by integrating multi-source geospatial and socio-economic data to estimate maintenance demand and forecast annual tree-management costs. The analysis combines street tree inventories, canopy cover data, census boundary information, environmental policy zones, income indicators, and land surface temperature observations to construct a tract-level decision model. A bottom-up cost estimation approach is adopted, using tree size classes and contractor-informed maintenance rate assumptions, and the resulting cost structure is evaluated through multiple machine learning models, including linear regression, random forest, and XGBoost. The results indicate that mature and critical trees, environmental sensitivity zones, and socio-economic conditions are important drivers of maintenance cost. The XGBoost model achieves the highest predictive performance, with an $R^2$ of 0.9985, demonstrating the effectiveness of machine learning for municipal forestry budgeting and proactive resource allocation.
+
+---
+
+## 1. Introduction
+Urban forest management has become increasingly important in the context of climate adaptation, environmental justice, and public infrastructure resilience. Trees provide substantial ecosystem services, including cooling, air quality improvement, stormwater regulation, and biodiversity support. However, the maintenance of urban trees is costly, especially for mature trees that require specialized pruning, inspection, and emergency response. Municipal governments therefore need analytical tools that can identify which neighbourhoods require priority intervention and how maintenance budgets should be allocated.
+
+This study addresses these challenges by constructing a decision support system that combines geospatial analytics and predictive modelling. The project aims to estimate the annual maintenance costs associated with tree assets at the census tract level and to identify high-priority areas for intervention. In doing so, the analysis integrates environmental, demographic, and urban forestry data into a unified framework for decision-making.
+
+---
+
+## 2. Data Sources and Variables
+The study uses a multi-source dataset to construct a comprehensive spatial and socio-economic profile of urban tree management conditions.
+
+### 2.1 Data Sources
+The following datasets are incorporated:
+
+- Street tree inventory data from Waterloo and Kitchener
+- Tree canopy data derived from 2019 LiDAR-based canopy layers
+- Census boundary files for 2021
+- Environmentally Sensitive Policy Area (ESPA) data
+- Census income and demographic information
+- Land Surface Temperature (LST) data for estimating urban heat conditions
+
+These datasets are merged using geospatial operations such as spatial joins, intersections, and coordinate reprojection to create a tract-level analytical dataset.
+
+### 2.2 Key Variables
+The model uses a set of explanatory variables including:
+
+- Small trees
+- Medium trees
+- Critical trees
+- Canopy coverage percentage
+- ESPA indicator
+- Socio-economic index
+- Surface temperature
+
+The target variable is annual maintenance cost, which is estimated from the combination of tree asset characteristics and environmental risk factors.
+
+---
+
+## 3. Methodology
+
+### 3.1 Spatial Data Integration
+The first stage of the methodology involves integrating municipal tree inventory data with census-level spatial units. Tree points are spatially joined to census tracts, allowing the analysis to aggregate tree counts and environmental conditions by tract. Canopy coverage is then estimated by overlaying canopy polygons with tract boundaries. Environmental policy zones are incorporated through spatial intersection with ESPA polygons.
+
+### 3.2 Bottom-Up Cost Estimation
+A bottom-up maintenance cost framework is constructed to estimate the annual budget requirement for each census tract. The model classifies trees into size groups and assigns cost weights according to their maintenance intensity. In the notebook, the following rate assumptions are used:
+
+- Small trees: 450 CAD per unit
+- Medium trees: 1,200 CAD per unit
+- Critical trees: 1,200 CAD per unit
+
+The maintenance cost is then estimated using a weighted structure, with assumptions such as:
+- 5% of small trees requiring maintenance
+- 10% of medium trees requiring maintenance
+- 20% of critical trees requiring maintenance
+
+A storm-response surcharge is also incorporated, based on a contractor-related emergency contract proportion of 36%, reflecting the relationship between emergency response costs and standard maintenance expenditure. The cost model is further calibrated using a municipal budget anchor of 125,000 CAD, which serves as a reference value for scaling the simulated maintenance budget.
+
+This design reflects the use of contractor-informed unit rates and budget calibration, which is appropriate for municipal decision support where actual bid prices may not be fully available in the dataset.
+
+### 3.3 Machine Learning Models
+Three predictive models are developed:
+
+1. Linear Regression
+   - Serves as an interpretable baseline model.
+   - Inputs include small trees, medium trees, critical trees, ESPA status, and socio-economic index.
+
+2. Random Forest Regressor
+   - Captures non-linear interactions among tree and environmental factors.
+   - Suitable for modelling complex municipal cost patterns.
+
+3. XGBoost Regressor
+   - A gradient boosting model used to improve predictive performance.
+   - Capable of learning complex feature interactions with high accuracy.
+
+### 3.4 Model Evaluation
+Model performance is evaluated using the coefficient of determination, $R^2$, which measures how well the predicted values explain the variation in the observed maintenance cost data.
+
+---
+
+## 4. Results and Discussion
+
+### 4.1 Spatial Risk Identification
+The analysis identifies census tracts with high concentrations of critical trees as priority areas for maintenance. These tracts are important because mature and large-diameter trees are associated with higher pruning, inspection, and hazard mitigation costs. The results suggest that maintenance planning should not be evenly distributed across all tracts, but rather prioritized based on asset size, risk exposure, and environmental sensitivity.
+
+### 4.2 Environmental and Social Factors
+The results also show that canopy coverage, surface temperature, and ESPA designation are significant contextual variables. Areas with lower canopy cover or higher surface temperature are more likely to experience urban heat exposure and may benefit from more intensive canopy management. In addition, socio-economic indicators show that areas with lower relative income status may require more equitable resource allocation, supporting environmentally just planning outcomes.
+
+### 4.3 Cost Model Interpretation
+The regression model provides interpretable coefficients that describe the contribution of each variable to estimated maintenance cost. The model reports the following approximate effects:
+
+- Intercept: 60,569.86 CAD
+- Small trees coefficient: 0.42 CAD
+- Medium trees coefficient: 2.22 CAD
+- Critical trees coefficient: 4.76 CAD
+- ESPA coefficient: 583.74 CAD
+- Socio-economic index coefficient: -2.18 CAD
+
+These coefficients suggest that the cost burden rises significantly with larger tree classes, especially critical trees. The ESPA coefficient indicates that environmental policy zones are associated with higher maintenance requirements, while the socio-economic coefficient reflects the planning rationale of prioritizing disadvantaged areas through budget redistribution.
+
+### 4.4 Model Performance
+The predictive models show strong performance:
+
+- Linear Regression: $R^2 = 0.9583$
+- Random Forest: $R^2 = 0.9808$
+- XGBoost: $R^2 = 0.9985$
+
+These results indicate that the predictive framework is highly effective for estimating maintenance cost. The XGBoost model performs best, demonstrating that gradient boosting methods are particularly suitable for capturing the non-linear relationships between tree characteristics, environmental conditions, and maintenance demand.
+
+---
+
+## 5. Implications for Municipal Planning
+The study provides important implications for urban forest governance. Rather than relying on flat-budget allocation, municipalities can adopt data-driven budgeting strategies that prioritize areas with higher tree risk and greater environmental sensitivity. The model supports proactive maintenance planning, which can reduce the need for emergency interventions and improve the long-term resilience of urban forests.
+
+The study also illustrates the value of combining spatial analytics, environmental policy data, and AI-based prediction in municipal decision-making. Such an approach enables cities to allocate limited resources more efficiently while balancing cost management, environmental protection, and social equity.
+
+---
+
+## 6. Conclusion
+This study presents an AI-enhanced framework for urban tree maintenance planning that integrates geospatial analysis, environmental indicators, socio-economic variables, and machine learning. By incorporating tree inventory data, canopy information, community-level characteristics, and contractor-informed cost assumptions, the analysis provides a practical and evidence-based approach for estimating maintenance demand and forecasting annual budget requirements.
+
+The results show that mature and critical trees are the most influential predictors of maintenance cost, while ESPA status and socio-economic conditions also play important roles. The machine learning models demonstrate strong predictive capability, particularly XGBoost, which achieves an $R^2$ of 0.9985. Overall, the study demonstrates that AI-supported urban forestry planning can improve budget allocation, reduce reactive emergency spending, and contribute to more sustainable and equitable urban forest management.
