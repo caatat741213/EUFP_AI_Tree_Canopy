@@ -52,18 +52,6 @@ EUFP_AI_Tree_Canopy/
 │   ├── problem statement Case Studies.docx
 │   ├── References.txt
 │   └── mdset/
-│       ├── AI Solution Adoption & Change Management Report Canopy Decision Support System (DSS).md
-│       ├── AI_Adoption_Barriers_Canopy_DSS.md
-│       ├── Assignment 4.md
-│       ├── Assignment 4_topic.md
-│       ├── Assignment3_ AI Adoption and Change Management.md
-│       ├── Assignment_1.md
-│       ├── Assignment_1_EX.txt
-│       ├── Assignment_2.md
-│       ├── Canopy_DSS_Change_Management_Plan.md
-│       ├── Case_Study_Canopy.md
-│       ├── Unit 4_Interim Results Report.md
-│       └── problem statement Case Studies.md
 └── Result/
     ├── document/
     │   ├── canopyiq_index.csv
