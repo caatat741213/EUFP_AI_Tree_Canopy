@@ -1,0 +1,52 @@
+{
+  "project_title": "CanopyIQ: An AI-Assisted Decision Support System for Urban Tree Management and Community Prioritization",
+  "raw_inventory_rows": {
+    "Kitchener": 98734,
+    "Waterloo": 53499,
+    "total": 152233
+  },
+  "harmonized_classifier_rows": {
+    "Kitchener": 92918,
+    "Waterloo": 52408,
+    "total": 145326
+  },
+  "planning_boundaries": 55,
+  "communities_with_tree_records": 52,
+  "ranked_communities": 51,
+  "unranked_due_to_missing_backlog": [
+    "SOUTH PLAINS"
+  ],
+  "boundaries_without_tree_records": [
+    "DUNDEE",
+    "PIONEER TOWER EAST",
+    "VICTORIA NORTH"
+  ],
+  "index_formula": "0.25 \u00d7 deficit + 0.25 \u00d7 attrition + 0.25 \u00d7 monoculture + 0.25 \u00d7 inspection backlog",
+  "stability": {
+    "monte_carlo_draws": 1000,
+    "median_spearman_rho": 0.996,
+    "p5_spearman_rho": 0.99,
+    "min_spearman_rho": 0.985,
+    "median_top15_preserved_pct": 100.0,
+    "p5_top15_preserved_pct": 93.3,
+    "pct_draws_rho_gt_095": 100.0
+  },
+  "single_indicator_comparison": {
+    "deficit_only": {
+      "rho": 0.213,
+      "top15_overlap": 7
+    },
+    "attrition_only": {
+      "rho": 0.187,
+      "top15_overlap": 5
+    },
+    "monoculture_only": {
+      "rho": 0.504,
+      "top15_overlap": 8
+    },
+    "backlog_only": {
+      "rho": 0.572,
+      "top15_overlap": 12
+    }
+  }
+}

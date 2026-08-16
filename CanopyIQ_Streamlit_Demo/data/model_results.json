@@ -1,0 +1,128 @@
+[
+ {
+  "model": "T1: train KITCHENER -> test WATERLOO",
+  "n_test": 52408,
+  "prevalence": 0.214,
+  "accuracy": 0.808,
+  "precision": 0.548,
+  "recall": 0.605,
+  "f1": 0.575,
+  "roc_auc": 0.773,
+  "pr_auc": 0.65,
+  "cm": [
+   [
+    35572,
+    5613
+   ],
+   [
+    4428,
+    6795
+   ]
+  ]
+ },
+ {
+  "model": "T2: train WATERLOO -> test KITCHENER",
+  "n_test": 92918,
+  "prevalence": 0.188,
+  "accuracy": 0.66,
+  "precision": 0.298,
+  "recall": 0.597,
+  "f1": 0.398,
+  "roc_auc": 0.664,
+  "pr_auc": 0.366,
+  "cm": [
+   [
+    50900,
+    24565
+   ],
+   [
+    7025,
+    10428
+   ]
+  ]
+ },
+ {
+  "model": "B0: majority class (pooled)",
+  "n_test": 36332,
+  "prevalence": 0.197,
+  "accuracy": 0.803,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "roc_auc": 0.5,
+  "pr_auc": 0.197,
+  "cm": [
+   [
+    29163,
+    0
+   ],
+   [
+    7169,
+    0
+   ]
+  ]
+ },
+ {
+  "model": "B1: single rule - is it Fraxinus?",
+  "n_test": 36332,
+  "prevalence": 0.197,
+  "accuracy": 0.874,
+  "precision": 0.913,
+  "recall": 0.401,
+  "f1": 0.558,
+  "roc_auc": 0.696,
+  "pr_auc": 0.484,
+  "cm": [
+   [
+    28888,
+    275
+   ],
+   [
+    4292,
+    2877
+   ]
+  ]
+ },
+ {
+  "model": "P: RF pooled, 2 cities",
+  "n_test": 36332,
+  "prevalence": 0.197,
+  "accuracy": 0.818,
+  "precision": 0.531,
+  "recall": 0.66,
+  "f1": 0.589,
+  "roc_auc": 0.835,
+  "pr_auc": 0.692,
+  "cm": [
+   [
+    24990,
+    4173
+   ],
+   [
+    2439,
+    4730
+   ]
+  ]
+ },
+ {
+  "model": "D: RF pooled, no Fraxinus",
+  "n_test": 33180,
+  "prevalence": 0.129,
+  "accuracy": 0.697,
+  "precision": 0.25,
+  "recall": 0.671,
+  "f1": 0.364,
+  "roc_auc": 0.749,
+  "pr_auc": 0.341,
+  "cm": [
+   [
+    20257,
+    8631
+   ],
+   [
+    1412,
+    2880
+   ]
+  ]
+ }
+]
