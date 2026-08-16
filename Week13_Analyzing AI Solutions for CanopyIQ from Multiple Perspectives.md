@@ -1,59 +1,3 @@
-
-Gemini
-將聊天轉換為 PDF
-將聊天轉換為 PDF
-在 Acrobat 中開啟此聊天
-
-即時通訊
-
-Spark
-Beta 版
-新對話
-搜尋對話
-影片
-媒體庫
-新增筆記本
-Untitled notebook
-AI 解決方案多元視角分析
-專案計畫：DQN 到 Actor-Critic
-Notebook 指令執行與套件安裝
-簡單討論無需線上會議
-PPO 演算法專案內容說明
-WSL 中 VS Code Jupyter 核心問題
-報告演講稿製作請求
-解決 Python 虛擬環境路徑錯誤
-Vanguard 提案：減少停機時間
-Agent Instructions for Coursework Management
-Industry 4.0 課程 TBP 教學請求
-AI 課程階段性報告說明
-DQN 作業流程規劃與執行
-團隊敏捷開發實務操作指南
-AI 規範化設計系統導入
-AI Performance Management for Zillow
-AI Performance Management Case Studies
-AI 專案準備資料分析
-參考文獻 DOI 補充
-NotebookLM 論文文獻匯入檢查
-作業優化與補強建議
-模組化後端管線重構建議
-AI 報告優化建議
-AI 城市林業決策支援系統
-XGBoost Import Error and Solution
-城市林業AI決策支援系統評估
-GEE Data Fetching: Online/Offline Modes
-樹木維護預算分析報告
-和 Gemini 的對話
-變成markdown格式我要複製
-
-Your Markdown document is ready:
-
-「MD」圖示
-CanopyIQ_Analysis
- MD 
-開啟
-Here is the formatted Markdown text for easy copy-pasting:
-
-Markdown
 # Analyzing AI Solutions for CanopyIQ from Multiple Perspectives
 ## Tree Canopy Decision Support System — Kitchener, Waterloo & Cambridge
 
@@ -296,5 +240,4 @@ Its index is transparent and stable under weight perturbation (median Spearman $
 1. **Nesbitt, L., Meitner, M. J., Girling, C., Sheppard, S. R., & Lu, Y.** (2019). *Who has access to urban vegetation? A spatial analysis of distributional green equity in US cities.* Landscape and Urban Planning, 181, 51–79.
 2. **Vogt, J. M., Hauer, R. J., & Fischer, B. C.** (2015). *Explaining the urban forest: A need for proactive asset management.* Arboriculture & Urban Forestry, 41(1), 25–43.
 3. **Ziter, C. D., Pedersen, E. J., Kucharik, C. J., & Turner, M. G.** (2019). *Scale-dependent interactions between tree canopy cover and impervious surfaces reduce urban air temperature.* Proceedings of the National Academy of Sciences, 116(15), 7575–7580.
-CanopyIQ_Analysis.md
-目前顯示的是「CanopyIQ_Analysis.md」。
+
